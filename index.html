@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <h1>Usman Public School</h1>
+    <p>Campus 35 | Table Generator</p>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+
+    <!-- Table Generator Section -->
+    <section class="table-section">
+      <h2>Generate Table</h2>
+
+      <input type="number" id="number" placeholder="Enter number (e.g. 5)">
+      <input type="number" id="limit" placeholder="Enter limit (e.g. 10)">
+
+      <button onclick="generateTable()">Generate Table</button>
+      <button class="reset-btn" onclick="resetTable()">Reset</button>
+
+      <div class="table-box" id="output"></div>
+    </section>
+
+    <!-- Group Work Section -->
+    <section class="group-section">
+      <h2>Group Work Students</h2>
+
+      <div class="group-grid">
+        <div class="student-card">Ali</div>
+        <div class="student-card">Ahmed</div>
+        <div class="student-card">Fatima</div>
+        <div class="student-card">Ayesha</div>
+        <div class="student-card">Usman</div>
+        <div class="student-card">Hassan</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
