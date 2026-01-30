@@ -1,41 +1,22 @@
-// function generateTable() {
-//   let num = document.getElementById("number").value;
-//   let limit = document.getElementById("limit").value;
-//   let output = document.getElementById("output");
-
-//   output.innerHTML = "";
-
-//   if (num === "" || limit === "") {
-//     output.innerHTML = "<p>Please enter both number and limit</p>";
-//     return;
-//   }
-
-//   for (let i = 1; i <= limit; i++) {
-//     output.innerHTML += `<p>${num} × ${i} = ${num * i}</p>`;
-//   }
-// }
-// function resetTable() {
-//   document.getElementById("number").value = "";
-//   document.getElementById("limit").value = "";
-//   document.getElementById("output").innerHTML = "";
-// }
-
 function generateTable() {
-    let num = document.getElementById("number").value
-    let limit = document.getElementById("limit").value
+    let x = document.getElementById("number").value;
+    let y = document .getElementById("limit").value;
     let output = document.getElementById("output");
+    output.innerHTML = "";
+    if (x === ""|| y === ""){
+        output.innerHTML = "Please Enter any number"
 
-    output.innerHTML = ""
-    if (num === "" || limit === "") {
-        output.innerHTML = "<p>Please enter both number an limit</p>"
-        return
     }
-    for (let i = 1; i <= limit; i++) {
-        output.innerHTML += `<p>${num} x ${i} = ${num * i}</p>`
+    else {
+        for (i = 1; i <= y; i++) {
+            output.innerHTML += `${x} x ${i} = ${x * i}<br/>`
+
+        }
     }
-}
+} 
+
 function resetTable() {
-    document.getElementById("number").value = "";
-    document.getElementById("limit").value = "";
-    document.getElementById("output").innerHTML = "";
-}
+     let x = document.getElementById("number").value = "";
+     let y = document.getElementById("limit").value = "";
+     let output = document.getElementById("output").innerHTML = "";
+ }
